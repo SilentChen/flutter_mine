@@ -1,43 +1,56 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 
+class MineSize {
+  static const double avatar     = 56;
+  // static const double iconBig = 40;
+  static const double iconNormal = 24;
+  // static const double big = 18;
+  // static const double normal = 16;
+  // static const double small = 12;
+  static const double iconBig = 40;
+  static const double big     = 16;
+  static const double normal  = 14;
+  static const double small   = 12;
+}
+
 class MineTextStyle {
   static const TextStyle big = const TextStyle(
     fontWeight: FontWeight.w600,
-    fontSize: SysSize.big,
+    fontSize: MineSize.big,
     inherit: true,
   );
   static const TextStyle bigWithOpacity = const TextStyle(
     color: const Color.fromRGBO(0xff, 0xff, 0xff, .66),
     fontWeight: FontWeight.w600,
-    fontSize: SysSize.big,
+    fontSize: MineSize.big,
     inherit: true,
   );
   static const TextStyle normalW = const TextStyle(
     fontWeight: FontWeight.w600,
-    fontSize: SysSize.normal,
+    fontSize: MineSize.normal,
     inherit: true,
   );
   static const TextStyle normal = const TextStyle(
     fontWeight: FontWeight.normal,
-    fontSize: SysSize.normal,
+    fontSize: MineSize.normal,
     inherit: true,
   );
   static const TextStyle normalWithOpacity = const TextStyle(
     color: const Color.fromRGBO(0xff, 0xff, 0xff, .66),
     fontWeight: FontWeight.normal,
-    fontSize: SysSize.normal,
+    fontSize: MineSize.normal,
     inherit: true,
   );
   static const TextStyle small = const TextStyle(
     fontWeight: FontWeight.normal,
-    fontSize: SysSize.small,
+    fontSize: MineSize.small,
     inherit: true,
   );
   static const TextStyle smallWithOpacity = const TextStyle(
     color: const Color.fromRGBO(0xff, 0xff, 0xff, .66),
     fontWeight: FontWeight.normal,
-    fontSize: SysSize.small,
+    fontSize: MineSize.small,
     inherit: true,
   );
 }
